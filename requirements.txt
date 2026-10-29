@@ -1,7 +1,7 @@
 aiofiles==23.2.1; python_full_version >= "3.7"
 anyio==3.7.1; python_full_version >= "3.6.2" and python_version >= "3.6"
 apscheduler==3.10.4
-cachetools==5.2.0; python_version >= "3.7" and python_version < "4.0"
+cachetools==7.2.5; python_version >= "3.7" and python_version < "4.0"
 certifi==2023.7.22; python_version >= "3.7" and python_version < "4"
 charset-normalizer==2.1.0; python_version >= "3.7" and python_version < "4" and python_full_version >= "3.6.0"
 dnspython==2.2.1; python_version >= "3.6" and python_version < "4.0"
