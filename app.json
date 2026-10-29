@@ -1,0 +1,101 @@
+{
+    "name": "gojo-manager",
+    "description": "Gojo is a Telegram Group management bot made using Pyrogram and Python, which makes it modern and faster than most of the Telegram chat managers.",
+    "logo": "https://te.legra.ph/file/633bd27c1607fe98920b6.jpg",
+    "keywords": [
+        "telegram bot",
+        "group bot",
+        "group",
+        "manager",
+        "Gojo",
+        "Anime"
+    ],
+    "repository": "https://github.com/botnex-official/Gojo-Manager",
+    "success_url": "https://t.me/Gojo_Manager_Bot",
+    "env": {
+        "BOT_TOKEN": {
+            "description": "Your telegram bot token, get from @Botfather in telegram.",
+            "required": true
+        },
+        "API_ID": {
+            "description": "Get API_ID from my.telegram.org, used for pyrogram base.",
+            "required": true
+        },
+        "API_HASH": {
+            "description": "Get API_HASH from my.telegram.org, used for pyrogram base.",
+            "required": true
+        },
+        "DB_URI": {
+            "description": "Your MongoDB connection string.",
+            "required": true
+        },
+        "DB_NAME": {
+            "description": "Your MongoDB database name.",
+            "required": false
+        },
+        "OWNER_ID": {
+            "description": "Your user ID as an integer.",
+            "required": false
+        },
+        "SUPPORT_GROUP": {
+            "description": "Your Telegram support group chat username where users can contact in case of a problem..",
+            "required": false
+        },
+        "MESSAGE_DUMP": {
+            "description": "Event logs channel where bot will send updates.",
+            "required": false
+        },
+        "PREFIX_HANDLER": {
+            "description": "Something like '/' to execute commands...Don't give a comma or anything after 1 handler just give and space then enter second hand;ler",
+            "required": false
+        },
+        "DEV_USERS": {
+            "description": "ID of users who are Devs of your bot. Use space to separate values",
+            "required": false
+        },
+        "SUPPORT_CHANNEL": {
+            "description": "Channel where bot updates will be posted!",
+            "required": false
+        },
+        "SUDO_USERS": {
+            "description": "A space-separated list of user IDs who you want to assign as sudo users.",
+            "required": false
+        },
+        "WHITELIST_USERS": {
+            "description": "A space-separated list of user IDs whitelisted, cannot be restricted.",
+            "required": false
+        },
+        "GENIUS_API": {
+            "description": "Your Lyrics Genius Api Token. To fetch lyrics of songs",
+            "required": false
+        },
+        "BDB_URI": {
+            "description": "Your Mongodb uri different from the previous one to store more info",
+            "required": false
+        },
+        "TIME_ZONE": {
+            "description": "Your time zone",
+            "required": false
+        },
+        "RMBG_API": {
+            "description": "Your removebackground api to remove the background",
+            "required": false
+        },
+        "WORKERS": {
+            "description": "Number of workers to run the bot.",
+            "required": false
+        },
+        "ENV": {
+            "description": "Setting this to ANYTHING will enable environment variables. Leave it as it is",
+            "required": true
+        }
+    },
+    "buildpacks": [
+        {
+            "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
+        },
+        {
+            "url": "heroku/python"
+        }
+    ]
+}

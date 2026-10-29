@@ -1,0 +1,13 @@
+version: "3.9"
+services:
+  worker:
+    build: .
+    environment:
+      BOT_TOKEN: $BOT_TOKEN
+      API_ID: $API_ID
+      API_HASH: $API_HASH
+      PREFIX_HANDLER: $PREFIX_HANDLER
+      MESSAGE_DUMP: $MESSAGE_DUMP
+      DB_URI: $DB_URI
+    env_file:
+      - .env
